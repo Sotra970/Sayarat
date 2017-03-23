@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/add_container"
+    android:layout_margin="2dp"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:clickable="true"
+        android:id="@+id/loadingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:src="@drawable/fx_add_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<ImageView
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:id="@+id/product_item_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+</FrameLayout>
+    <LinearLayout
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/scrim_sme"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_gravity="left|bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/add_share"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:shadowRadius="1"
+                    android:layout_marginRight="4dp"
+                    android:textSize="@dimen/smal_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:text="@string/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:tint="@color/white"
+                    android:src="@drawable/ic_share_white_18dp"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/add_like_v"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textStyle="bold"
+                    android:layout_marginRight="4dp"
+                    android:textSize="@dimen/smal_text_size"
+                    android:textColor="@color/colorAccent"
+                    android:layout_gravity="center"
+                    android:text="@string/like"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:gravity="left"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/product_item_likes"
+                        android:layout_gravity="center"
+                        android:textColor="@color/white"
+                        android:text="123"
+                        android:textSize="@dimen/smal_text_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:tint="@color/colorAccent"
+                        android:src="@drawable/ic_favorite_white_18dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+      <LinearLayout
+          android:layout_gravity="center"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content">
+          <TextView
+              android:maxWidth="168dp"
+              android:textSize="@dimen/smal_text_size"
+              android:textStyle="bold"
+              android:textColor="@color/colorAccent"
+              android:text="@string/price"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+          <TextView
+              android:maxWidth="168dp"
+              android:id="@+id/product_item_car_price"
+              android:textSize="@dimen/smal_text_size"
+              android:textColor="@color/white"
+              android:text="Volvo 2016"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content" />
+      </LinearLayout>
+      <LinearLayout
+          android:layout_gravity="center"
+          android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="@dimen/smal_text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/smal_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/product_item_car_type"
+                    android:text="LSX 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="2dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:maxWidth="168dp"
+        android:textSize="@dimen/smal_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent"
+        android:text="@string/model"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/smal_text_size"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:id="@+id/product_item_make"
+                    android:text="LSX 2017"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+    </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

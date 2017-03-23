@@ -1,0 +1,171 @@
+<resources>
+    <string name="app_name">سيارات</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="log_in">تسجيل الدخول</string>
+    <string name="email">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="or">OR</string>
+    <string name="facebook_login">Continue with facebook</string>
+    <string name="twitter_login">Continue with twitter</string>
+    <string name="Google_login">Continue with Google+</string>
+    <string name="forget_password">نسيت رمز المرور</string>
+    <string name="new_user"> مستخدم جديد </string>
+    <string name="register_here">نسجل من هنا</string>
+    <string name="share">مشاركة</string>
+    <string name="like">اعجاب</string>
+    <string name="fav">اضف للمفضلة</string>
+    <string name="add_car">عرض سيارة</string>
+    <string name="order_car">طلب سيارة</string>
+    <string name="add_adv">اضف اعلانك</string>
+    <string name="ptofile">الملف الشخصي</string>
+    <string name="messages">الرسائل</string>
+    <string name="ta7weel_3omla">تحويل العمله</string>
+    <string name="about_uc">من نحن</string>
+    <string name="contact_us">اتصل بنا</string>
+    <string name="settings">الاعدادات</string>
+    <string name="logout">الخروج</string>
+
+    <string name="add_pic">اضف صور</string>
+    <string name="add_buyer_info">تفاصيل البائع</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="adv_title">عنوان الاعلان</string>
+    <string name="city">المدينه</string>
+    <string name="under_worenty">تحت ضمان الشركة</string>
+    <string name="continuee">متابعة</string>
+    <string name="cant_be_empty">يجب رفع صورة</string>
+    <string name="name">الاسم</string>
+    <string name="phone">رقم الجوال</string>
+    <string name="sign_up">تسجيل</string>
+    <string name="adv_success">تم اضافة الاعلان بنجاح</string>
+    <string name="model">الموديل</string>
+    <string name="advertiser">المعلن</string>
+    <string name="search">ابحث</string>
+    <string name="search_transtion">search_transtion</string>
+    <string name="home">الرئسية</string>
+    <string name="no_data_err">يجيب ادخال قيمه</string>
+    <string name="no_ch_err">يجب اختيار قيمه</string>
+    <string name="no_data">لا توجد بينات</string>
+    <string name="no_comments">لا توجد تعليقات</string>
+    <string name="Enter_valid_Username">ادخل اسم مستخدم او رقم هاتف صحيح</string>
+    <string name="Enter_valid_PASS">كلمة سر غير صحيحه</string>
+    <string name="Enter_valid_PHONE">رقم الهاتف غير صحيح</string>
+    <string name="Enter_valid_Email">البريد الالكتروني غير صحيح</string>
+    <string name="login_err">يرجى مراجعة البينات و اعادة المحوله</string>
+    <string name="news_Image_shared_transition_name">add_details_transition</string>
+
+    <string name="State">الحالة</string>
+    <string name="factory">المصنع</string>
+    <string name="year_made">السنة</string>
+    <string name="price">السعر</string>
+    <string name="transmission_movement">ناقل الحركة</string>
+    <string name="by">بواسطة: </string>
+    <string name="added_in">تمت الاضافه في:  </string>
+    <string name="profile_shared_transition_name">profile_transtion</string>
+    <string name="message">رسالة</string>
+    <string name="no_ads">لا توجد اعلانات</string>
+    <string name="car_counter">الممشى</string>
+    <string name="an_details">تفاصيل اخرى</string>
+    <string name="opp_fail">فشل في العمليه يرجى اعادة المحاوله</string>
+    <string name="no_fav">لا توجد مفضلات</string>
+    <string name="Mess_transtion">messages_transtion</string>
+    <string name="title">العنوان</string>
+    <string name="browseWeb">تصفح موقعنا</string>
+    <string name="download_android_app">تطبيق الندرويد</string>
+    <string name="android_app_link">https://goo.gl/V0t26y</string>
+    <string name="ios_link">https://goo.gl/G4ifq8</string>
+    <string name="download_ios_app">تطبيق الابل</string>
+    <string name="website_link">http://sayrat.com</string>
+    <string name="add_details">تفاصيل الاعلان</string>
+    <string name="car_dsc">مواصفات السيارة</string>
+    <string name="my_ads">اعلاناتي</string>
+    <string name="favs">مفضلاتي</string>
+    <string name="car_using_status">نوع الاستخدام</string>
+    <string name="price_type">حالة السعر</string>
+    <string name="add_num">رقم الاعلان</string>
+    <string name="car_set">وضع السيارة</string>
+    <string name="bank_transfer_to">وقت التحويل</string>
+    <string name="transfer">كما هو مذكور في معاهدة استخدام الموقع، فإن الموقع يحصل على عمولة قدرها 0.5% من سعر السلعة المباعة عن طريق الموقع و يدفعها المعلن، وهي أمانه في ذمته. إذا كانت السلعة المباعة سلعه مركبة، وبها أكثر من وسيط، فإن الموقع يكون أحد الوسطاء، ويتقاسم العمولة معهم. ويعتبر هذا الشرط اتفاقاً ملزماً، يحق بموجبه للموقع المطالبة
+    </string>
+    <string name="transfer_bank_number">حساب قيمة العمولة</string>
+    <string name="value_commission">قيمة العمولة : </string>
+    <string name="value_commission.">قيمة العمولة  </string>
+    <string name="user_name">اسم المستخدم</string>
+    <string name="amount_commission">مبلغ العمولة</string>
+    <string name="name_transfer_to">اسم المحول</string>
+    <string name="transfer_time">وقت التحويل</string>
+    <string name="vervication_code">رمز التحقق</string>
+    <string name="resend_vervication_code">اعد ارسال رمز التحقق</string>
+    <string name="password_confirm">تأكيد رمز السر</string>
+    <string name="password_updated">تم تعديل الرقم السري</string>
+    <string name="code_not_match">يرجى من رمز التحقق</string>
+    <string name="user_name_404">اسم المستخدم غير موجود</string>
+    <string name="acc_virfid">تم تفعيل الحساب</string>
+    <string name="dublicate_email">البريد اللكتروني موجود بالفعل</string>
+    <string name="dublicate_phone">رقم الجوال موجود يالفعل</string>
+    <string name="update">تحديث</string>
+    <string name="bank_name">ااختر البنك</string>
+    <string name="moshtary">تفاصيل المشتري</string>
+
+    <string name="name1"> بدر حسن عبدالله الجفري</string>
+    <string name="bank1">0108065199710018</string>
+    <string name="bank2">1252886709940</string>
+    <string name="bank3">10359975000108</string>
+    <string name="bank4">176608010638417</string>
+    <string name="bank5">B9611500153</string>
+
+
+    <string name="name_bank1">بنك العربى	</string>
+    <string name="name_bank2">بنك الرياض</string>
+    <string name="name_bank3">بنك الاهلى	</string>
+    <string name="name_bank4">بنك الراجحى</string>
+    <string name="name_bank5">البنك السعودى الفرنسى</string>
+    <array name="bank_names">
+        <item>@string/name_bank1</item>
+        <item>@string/name_bank2</item>
+        <item>@string/name_bank3</item>
+        <item>@string/name_bank4</item>
+        <item>@string/name_bank5</item>
+    </array>
+
+
+    <string name="doly1">SA8730400108065199710018</string>
+    <string name="doly2">SA9220000001252886709940</string>
+    <string name="doly3">SA9810000010359975000108</string>
+    <string name="doly4">SA8280000176608010638417</string>
+    <string name="doly5">SA82550000000B9611500153</string>
+
+
+    <string name="facebook_app_id">1412348198835214</string>
+    <string name="fb_login_protocol_scheme">fb1412348198835214</string>
+    <string name="overview_text">انطلق موقعنا في شهر ديسمبر 2016 في المملكة العربية السعودية كاحد اكثر مواقع السيارات تطورا والتزاما بخدمة سوق السيارات في السعودية . ومنذ نشأته عمل موقعنا على ان يكون منصة لتسهيل جميع عمليات البيع و الشراء لجميع فئات السيارت الجديدة والمستعملة ومن كافة الانواع والشركات الصانعة وسواء من الافراد العاديين او تجار السيارات</string>
+    <string name="overview">نظرة عامة</string>
+    <string name="our_mission">مهمتنا</string>
+    <string name="our_objective">أهدافنا</string>
+    <string name="our_objective_text">ان موقعنا من المواقع البارزة في عالم تجارة السيارات الالكترونية, ولذلك تنصب غاية اهدافنا على ان تتم رؤيتنا من قبل جميع المستخدمين افرادا او تجارا كمصدر موثوق لجميع الخدمات المختصة ببيع و شراء السيارات ليس في المملكة العربية السعودية فحسب بل في منطقة الخليج العربي</string>
+    <string name="our_values">قيمنا</string>
+    <string name="our_values_text">في موقعنا، تحكمنا ثلاث قيمٍ جوهرية أساسية نعتز بها، هي الحماس، والجودة، والتفاني. فنحن متحمسون لتوظيف التقنية من أجل خدمة عالم السيارات ، وملتزمون بتقديم خدمات ذات جودة عالية، وفريقنا ملتزم بالتفاني لتمكين جميع المستخدمين من الحصول على افضل النتائج من خلال موقعنا</string>
+    <string name="our_mission_text">ان مهمتنا هي تقديم وسيلة بيع و شراء السيارات عصرية ومتطورة للاشخاص و التجار وذلك من خلال ارساء معايير جديدة تقنية للتميز وسهولة في استخدام احدث وسائل التقنية الحديثة</string>
+    <string name="notes">ملحوظات</string>
+    <string name="title_activity_share_activty">ShareActivty</string>
+    <string name="ryal">ريال</string>
+    <string name="requests">الطلبات</string>
+    <string name="sayrat_address">مدينة جدة - ص.ب. 3598 - الرمز البريدي 22337 - شارع فارس المقدام - حي مدائن الفهد - - المملكة العربية السعودية</string>
+    <string name="address">العنوان</string>
+    <string name="inbox">الرسائل الواردة</string>
+    <string name="outbox">الرسائل الصادرة</string>
+    <string name="delete_ad">حذف الاعلان</string>
+    <string name="delete_confirm">هل تريد حذف الاعلان</string>
+    <string name="delete_img">هل تريد حذف الصورة</string>
+    <string name="delet_fav">هل تريدحذف الاعلان من المفضله</string>
+    <string name="within_month">لا يمكنك اعادة النشر غي اقلمن شهر</string>
+    <string name="user_id">رقم العضو</string>
+    <string name="ph_email">رقم الجوال/البريدالالكتروني</string>
+    <string name="title_sayrat">سوق سيارات</string>
+    <string name="request_details">تفاصيل الطلب</string>
+    <string name="request_num">رقم الطلب</string>
+    <string name="com">الشركة</string>
+
+
+</resources>

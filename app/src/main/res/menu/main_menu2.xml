@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/home_action"
+    android:title="@string/home"
+    android:icon="@drawable/ic_home_white_24dp"
+    />
+    <item android:id="@+id/req_action"
+    android:title="@string/requests"
+    android:icon="@drawable/task"
+    />
+
+    <item android:id="@+id/about_action"
+        android:title="@string/about_uc"
+        android:icon="@drawable/ic_contact_mail_white_24dp"
+        />
+
+    <item android:id="@+id/contact_action"
+        android:title="@string/contact_us"
+        android:icon="@drawable/ic_call_white_24dp"
+        />
+
+
+
+    <item android:id="@+id/sign_up_action"
+        android:title="@string/sign_up"
+        android:icon="@drawable/ic_person_white_24dp"
+        />
+
+
+    <item android:id="@+id/sign_in_action"
+        android:title="@string/log_in"
+        android:icon="@drawable/ic_person_white_24dp"
+        />
+
+
+
+</menu>

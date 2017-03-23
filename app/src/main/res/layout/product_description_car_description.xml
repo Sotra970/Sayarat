@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            card_view:contentPaddingBottom="12dp"
+            android:layout_marginBottom="96dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="4dp">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/const_prod_num"
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/add_num"/>
+                    <TextView
+                        android:id="@+id/add_num"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="بنزين"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/State"/>
+
+                    <TextView
+                        android:id="@+id/car_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="مستعملة"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        />
+
+
+                </LinearLayout>
+
+                <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray200"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="12dp">
+                <TextView
+                android:textColor="@color/sme_black"
+                    android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/mid_text_size"
+                android:layout_marginRight="24dp"
+                android:gravity="right"
+                android:text="@string/car_using_status"/>
+                <TextView
+                    android:id="@+id/car_using_status"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/mid_text_size"
+                android:layout_marginLeft="24dp"
+                android:gravity="left"
+                android:layout_weight="1"
+                />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/car_set"/>
+                    <TextView
+                        android:id="@+id/car_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="FJ Cruiser"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/model"/>
+                    <TextView
+                        android:id="@+id/car_make"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="FJ Cruiser"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/factory"/>
+                    <TextView
+                        android:id="@+id/car_type"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="Toyota"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/year_made"/>
+                    <TextView
+                        android:id="@+id/car_model"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="2010"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+
+                    <TextView
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:text="@string/price"/>
+                    <TextView
+
+                        android:id="@+id/car_price_value"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="65 000"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"
+                    />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/price_type"/>
+                    <TextView
+                        android:id="@+id/car_price_type"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="بنزين"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+
+                <LinearLayout
+                    android:layout_margin="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:text="@string/transmission_movement"/>
+                    <TextView
+                        android:id="@+id/car_auto"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/gray200"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="12dp">
+                    <TextView
+                        android:layout_marginRight="24dp"
+                        android:gravity="right"
+                        android:textColor="@color/sme_black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="@string/city"/>
+                    <TextView
+                        android:id="@+id/car_city"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/mid_text_size"
+                        android:text="القاهرة"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="24dp"
+                        android:gravity="left"
+                        />
+
+
+                </LinearLayout>
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:background="@color/gray200"/>-->
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_margin="12dp">-->
+                    <!--<TextView-->
+                        <!--android:layout_marginRight="24dp"-->
+                        <!--android:gravity="right"-->
+                        <!--android:textColor="@color/sme_black"-->
+                        <!--android:id="@+id/text_view_cylinders"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:textSize="@dimen/mid_text_size"-->
+                        <!--android:text="@string/cylinders"/>-->
+                    <!--<TextView-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:textColor="@color/colorPrimary"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:textSize="@dimen/mid_text_size"-->
+                        <!--android:text="6"-->
+                        <!--android:layout_weight="1"-->
+                        <!--android:layout_marginLeft="24dp"-->
+                        <!--android:gravity="left"-->
+                        <!--/>-->
+
+
+                <!--</LinearLayout>-->
+            </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.v7.widget.CardView>
+</FrameLayout>

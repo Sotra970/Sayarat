@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <transitionSet
+        android:transitionOrdering="together"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <transitionSet xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <transition
+                class="com.sayarat.transition.LiftOff"
+                android:elevation="2dp" />
+            <targets>
+                <target android:targetId="@id/upload_main_container" />
+            </targets>
+        </transitionSet>
+
+        <changeBounds android:duration="450"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+            <pathMotion
+
+                class="com.sayarat.transition.GravityArcMotion"
+                android:maximumAngle="90" />
+        </changeBounds>
+    <fade android:fadingMode="fade_in">
+        <targets>
+            <target android:excludeId="@android:id/statusBarBackground"/>
+            <target android:excludeId="@id/upload_main_container"/>
+            <!--<target android:excludeId="@id/appbar"/>-->
+            <!--<target android:excludeId="@id/newsFeedSharedInView"/>-->
+            <target android:excludeId="@android:id/navigationBarBackground"/>
+        </targets>
+    </fade>
+
+</transitionSet>

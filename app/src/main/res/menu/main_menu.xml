@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/home_action"
+    android:title="@string/home"
+    android:icon="@drawable/ic_home_white_24dp"
+    />
+    <item android:id="@+id/req_action"
+    android:title="@string/requests"
+    android:icon="@drawable/task"
+    />
+    <item android:id="@+id/add_car_action"
+        android:title="@string/add_adv"
+        android:icon="@drawable/ic_add_white_24dp"
+        />
+
+    <item android:id="@+id/profile_action"
+        android:title="@string/ptofile"
+        android:icon="@drawable/ic_person_white_24dp"
+        />
+
+    <item android:id="@+id/messages_action"
+        android:title="@string/messages"
+        android:icon="@drawable/ic_mail_white_24dp"
+        />
+
+    <item android:id="@+id/ta7weel_action"
+        android:title="@string/ta7weel_3omla"
+        android:icon="@drawable/ic_account_balance_white_24dp"
+        />
+
+    <item android:id="@+id/about_action"
+        android:title="@string/about_uc"
+        android:icon="@drawable/ic_contact_mail_white_24dp"
+        />
+
+    <item android:id="@+id/contact_action"
+        android:title="@string/contact_us"
+        android:icon="@drawable/ic_call_white_24dp"
+        />
+
+    <item android:id="@+id/settings_action"
+        android:title="@string/settings"
+        android:icon="@drawable/ic_settings_white_24dp"
+        />
+
+    <item android:id="@+id/logout_action"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_power_settings_new_white_24dp"
+        />
+
+
+
+
+</menu>

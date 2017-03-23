@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.sayarat.Activity.UploadActivity">
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <include layout="@layout/main_toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TabLayout
+            android:id="@+id/addproduct_tabLayout"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"/>
+        <FrameLayout
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+</android.support.design.widget.AppBarLayout>
+
+   <FrameLayout
+       app:layout_behavior="@string/appbar_scrolling_view_behavior"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <android.support.v7.widget.CardView
+           app:cardCornerRadius="6dp"
+           android:id="@+id/upload_main_container"
+           android:transitionName="@string/add_adv"
+           app:cardBackgroundColor="@color/gray50"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+           <com.sayarat.widget.NonSwipeableViewPager
+               android:id="@+id/addproduct_viewpager"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"/>
+
+       </android.support.v7.widget.CardView>
+       <android.support.v7.widget.CardView
+           android:alpha="0"
+           android:id="@+id/sucess_con"
+           android:visibility="gone"
+           app:cardElevation="0dp"
+           android:translationZ="0dp"
+           app:cardCornerRadius="6dp"
+           app:contentPadding="24dp"
+           android:layout_gravity="center"
+           app:cardBackgroundColor="@color/white"
+           android:layout_marginTop="8dp"
+           android:layout_marginBottom="8dp"
+           android:layout_marginLeft="12dp"
+           android:layout_marginRight="12dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <TextView
+               android:id="@+id/sucess_text"
+               android:alpha="0"
+               android:textStyle="bold"
+               android:layout_gravity="center"
+               android:gravity="center"
+               android:textSize="@dimen/xl_text_size"
+               android:textColor="@color/colorAccent"
+               android:text="@string/adv_success"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content" />
+       </android.support.v7.widget.CardView>
+   </FrameLayout>
+    <FrameLayout
+        android:background="@color/scrim"
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/loadingSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="center"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

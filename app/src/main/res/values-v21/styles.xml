@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.Translucent.courseCreations">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+        <item name="android:windowEnterTransition">
+            @transition/course_creation_fab_tow_container_transtion
+        </item>
+    </style>
+
+    <style name="AppTheme.Translucent.search">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+        <item name="android:windowEnterTransition">
+            @transition/course_creation_fab_tow_container_transtion
+        </item>
+    </style>
+
+    <style name="AppTheme.Translucent.PD">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowAllowEnterTransitionOverlap">false</item>
+        <item name="android:windowSharedElementsUseOverlay">true</item>
+        <item name="android:windowEnterTransition">@transition/news_deital_window_enter_transition
+        </item>
+    </style>
+</resources>

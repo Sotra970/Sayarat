@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" >
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/nav_logo"
+        android:adjustViewBounds="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+         android:layout_marginTop="24dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        android:layout_width="196dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:id="@+id/nav_img"
+            android:layout_width="72dp"
+            android:layout_height="72dp" />
+        <TextView
+            android:layout_margin="8dp"
+            android:id="@+id/nav_name"
+            android:gravity="right"
+            android:textSize="@dimen/large_text_size"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

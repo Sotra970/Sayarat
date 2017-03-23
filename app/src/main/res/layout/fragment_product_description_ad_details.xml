@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:layout_gravity="center"
+                app:cardUseCompatPadding="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="6dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="196dp"/>
+                    <android.support.v7.widget.RecyclerView
+                        android:visibility="visible"
+                        android:id="@+id/pager_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_gravity="center"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="12dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <!--details-->
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_marginTop="4dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mid_text_size"
+                                android:textColor="@color/colorAccent"
+                                android:layout_gravity="center"
+                                android:text="Volvo 2016"/>
+                            <!--add time -->
+                            <LinearLayout
+                                android:layout_marginTop="4dp"
+                                android:paddingLeft="24dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/mid_text_size"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_gravity="right"
+                                    android:text="@string/added_in"/>
+                                <TextView
+                                    android:id="@+id/add_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/mid_text_size"
+                                    android:textColor="@color/colorAccent"
+                                    android:layout_gravity="right"
+                                    android:text="name"/>
+                            </LinearLayout>
+
+                            <!--//adder name -->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_marginTop="4dp"
+                                    android:paddingLeft="36dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/colorAccent"
+                                        android:layout_gravity="right"
+                                        android:text="@string/by"/>
+                                    <TextView
+                                        android:id="@+id/name"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/colorAccent"
+                                        android:layout_gravity="right"
+                                        android:text="name"/>
+                                </LinearLayout>
+                                <View
+                                    android:background="@color/colorPrimary"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="2dp"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginTop="4dp"
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <!--firist half-->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="الموديل : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_make"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="  "/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="المصنع : "/>
+
+                                    <TextView
+android:id="@+id/car_type"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+
+                                        />
+
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="السنة : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_model"
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="السعر : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_price_value"
+                                        android:gravity="left"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                            <!--//second half-->
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="نوع الاستخدام : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_using_status"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text=" "/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="ناقل الحركة : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_auto"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text=" "/>
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="المدينة : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_city"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+
+                                        />
+
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:visibility="gone"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+                                    <TextView
+
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        android:text="نوع السعر : "/>
+
+                                    <TextView
+                                        android:id="@+id/car_price_type"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:textSize="@dimen/mid_text_size"
+                                        android:textColor="@color/blue_gray"
+                                        />
+
+
+                                </LinearLayout>
+
+
+                                <!--<LinearLayout-->
+                                    <!--android:layout_width="match_parent"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:orientation="horizontal">-->
+                                    <!--<android.support.v7.widget.CardView-->
+                                        <!--android:layout_width="match_parent"-->
+                                        <!--android:layout_height="wrap_content"-->
+                                        <!--android:layout_marginTop="12dp">-->
+                                        <!--<android.support.v7.widget.RecyclerView-->
+                                            <!--android:id="@+id/profile_recycler_view"-->
+                                            <!--android:layout_width="match_parent"-->
+                                            <!--android:layout_height="wrap_content">-->
+                                        <!--</android.support.v7.widget.RecyclerView>-->
+                                    <!--</android.support.v7.widget.CardView>-->
+                                <!--</LinearLayout>-->
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <!--//3rd half-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mid_text_size"
+                                android:textColor="@color/blue_gray"
+                                android:text="وضع المركبة :"/>
+
+                            <TextView
+                                android:id="@+id/car_sset"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mid_text_size"
+                                android:textColor="@color/blue_gray"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mid_text_size"
+                                android:textColor="@color/blue_gray"
+                                android:text="الحالة : "/>
+
+                            <TextView
+                                android:id="@+id/car_status"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/mid_text_size"
+                                android:textColor="@color/blue_gray"
+
+                                />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:layout_marginRight="12dp"
+               android:layout_marginLeft="12dp"
+               android:layout_marginTop="8dp"
+               app:cardCornerRadius="4dp"
+               app:cardBackgroundColor="@color/white"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+               <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                   android:layout_marginBottom="4dp"
+                   android:orientation="vertical"
+                   android:background="@color/gray50"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content">
+                   <LinearLayout
+                       android:layout_margin="8dp"
+                       android:orientation="horizontal"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+                       <LinearLayout
+                           android:layout_marginRight="8dp"
+                           android:layout_marginLeft="8dp"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content">
+                           <EditText
+                               android:textColorHint="@color/colorSecondaryText"
+                               android:layout_weight="1"
+                               android:hint="التعليق"
+                               android:textColor="@color/cardview_dark_background"
+                               android:layout_marginTop="8dp"
+                               android:id="@+id/write_comment"
+                               android:textSize="16sp"
+                               android:gravity="bottom"
+                               android:paddingBottom="8dp"
+                               android:layout_width="match_parent"
+                               android:layout_height="48dp" />
+                           <ImageButton
+                               android:elevation="6dp"
+                               android:id="@+id/send_comment"
+                               android:layout_marginRight="8dp"
+                               android:src="@drawable/ic_send_white_24dp"
+                               android:layout_gravity="center"
+                               android:backgroundTint="@color/colorPrimary"
+                               android:background="@drawable/accent_circle"
+                               android:layout_width="36dp"
+                               android:layout_height="36dp" />
+                       </LinearLayout>
+                   </LinearLayout>
+               </FrameLayout>
+           </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                app:cardBackgroundColor="@color/gray50"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="96dp"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@+id/no_ads_loading"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:textSize="@dimen/xl_text_size"
+                    android:textColor="@color/sme_black"
+                    android:id="@+id/no_comments"
+                    android:text="@string/no_comments"
+                    android:gravity="center"
+                    android:layout_margin="24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:clickable="true"
+        android:id="@+id/loadingSpinner_comm"
+        android:elevation="12dp"
+        android:background="@color/scrim"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ProgressBar
+            android:layout_gravity="top"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </FrameLayout>
+</FrameLayout>

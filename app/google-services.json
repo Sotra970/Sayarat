@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1070786189021",
+    "firebase_url": "https://sayrat-82492.firebaseio.com",
+    "project_id": "sayrat-82492",
+    "storage_bucket": "sayrat-82492.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070786189021:android:e1b489d20228f26d",
+        "android_client_info": {
+          "package_name": "com.sayarat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070786189021-9ibgp3q9bl899v92l2mjbnsadi5e22im.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sayarat",
+            "certificate_hash": "a4d2e4cf14af4fcc407efc1ed2288b829385e32d"
+          }
+        },
+        {
+          "client_id": "1070786189021-7fnuegmasg1eedeogd13h6mjbptl3d9p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfAyUsk0jU6zPxdrkYZBczc6DPCHPQ8BA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070786189021-7fnuegmasg1eedeogd13h6mjbptl3d9p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

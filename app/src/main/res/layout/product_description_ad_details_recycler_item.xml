@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp"
+    android:layout_width="wrap_content"
+    android:layout_height="96dp">
+    <FrameLayout
+        android:background="@drawable/dash_rec"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:alpha="0.9"
+            android:layout_gravity="center"
+            android:tint="@color/colorPrimary"
+            android:src="@drawable/ic_add_a_photo_white_24dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <ImageView
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:id="@+id/product_description_ad_details_recyclle_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <FrameLayout
+            android:clickable="true"
+            android:id="@+id/loadingSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ProgressBar
+                android:layout_gravity="center"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </FrameLayout>
+
+    </FrameLayout>
+</android.support.v7.widget.CardView>

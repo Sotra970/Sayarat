@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:background="@color/gray200"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<FrameLayout
+    android:layout_marginTop="-1dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:padding="12dp"
+        android:background="@color/colorPrimary"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="8dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp" />
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp"
+        android:elevation="1dp"
+        android:id="@+id/add_img"
+        android:layout_width="96dp"
+        android:layout_height="96dp" />
+</FrameLayout>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginRight="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/add_title"
+                    android:textColor="@color/sme_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="سيارة تويوتا موديل 2002  "
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/add_time"
+                    android:textColor="@color/sme_black"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="منذ 26 يوم"/>
+            </LinearLayout>
+            <ImageView
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_keyboard_arrow_left_white_36dp"
+                android:layout_gravity="center"
+                android:layout_width="36dp"
+                android:layout_height="36dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>

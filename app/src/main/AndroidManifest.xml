@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sayarat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:theme="@style/AppTheme.splash"
+            android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:theme="@style/AppTheme.Transparent"
+            android:name=".Activity.LoginActivity" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.UploadActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SignUPActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ProductDetailsActivity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.SearchActivity"
+            android:theme="@style/AppTheme.Translucent.search"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.Profile_Activity"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.MessActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity
+            android:name=".Activity.SendMessageActivity"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".Activity.Contact_usActivity" />
+        <activity android:name=".Activity.CommActivity" />
+        <activity android:name=".Activity.SettingsActivity" />
+        <activity android:name=".Activity.Forget_Password_Activity" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- [START firebase_service] -->
+        <service android:name=".app.FCM.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name=".app.FCM.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- [END firebase_iid_service] -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="fdb0f5912cdc06739bbcad4b9eb1875f9a66e3e9" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+            >
+        </activity>
+        <activity android:name=".Activity.About_usActivity" />
+        <activity
+            android:name=".Activity.ShareActivty"
+            android:label="@string/title_activity_share_activty"
+            android:theme="@style/AppTheme.Translucent" />
+        <activity android:name=".Activity.ReqsActivity"></activity>
+    </application>
+
+</manifest>
